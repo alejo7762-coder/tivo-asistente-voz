@@ -1,0 +1,13 @@
+{
+  "name": "tivo-asistente",
+  "version": "1.0.0",
+  "description": "Software del asistente de voz TIVO para Raspberry Pi",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node src/index.js",
+    "texto": "node src/index.js --entrada=texto --salida=consola",
+    "test": "node --test \"pruebas/*.test.js\""
+  }
+}

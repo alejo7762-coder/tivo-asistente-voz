@@ -1,0 +1,19 @@
+# Servicio de systemd: arranca TIVO al encender la Raspberry Pi y lo reinicia si falla (HU-RNF05).
+# Instalación:
+#   sudo cp despliegue/tivo.service /etc/systemd/system/
+#   sudo systemctl enable --now tivo
+# Ajuste User y WorkingDirectory si su usuario o carpeta son distintos.
+[Unit]
+Description=Asistente de voz TIVO
+After=network-online.target sound.target
+Wants=network-online.target
+
+[Service]
+User=pi
+WorkingDirectory=/home/pi/tivo-asistente-voz/asistente
+ExecStart=/usr/bin/node src/index.js
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target

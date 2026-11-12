@@ -1,0 +1,22 @@
+{
+  "name": "tivo-api",
+  "version": "1.0.0",
+  "description": "API REST de TIVO: recordatorios, medicamentos, familiares y estado del dispositivo",
+  "private": true,
+  "type": "module",
+  "engines": { "node": ">=22.13" },
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning src/servidor.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch src/servidor.js",
+    "semilla": "node --disable-warning=ExperimentalWarning scripts/semilla.js",
+    "crear-dispositivo": "node --disable-warning=ExperimentalWarning scripts/crear-dispositivo.js",
+    "test": "node --disable-warning=ExperimentalWarning --test \"pruebas/*.test.js\""
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.0.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}

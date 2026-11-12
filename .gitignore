@@ -1,0 +1,14 @@
+node_modules/
+.env
+*.sqlite
+*.sqlite-*
+api/datos/
+asistente/datos/
+asistente/modelos/
+asistente/musica/*
+!asistente/musica/.gitkeep
+.expo/
+dist/
+*.log
+.DS_Store
+__pycache__/

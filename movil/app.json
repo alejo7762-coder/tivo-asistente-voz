@@ -1,0 +1,30 @@
+{
+  "expo": {
+    "name": "TIVO",
+    "slug": "tivo-asistente-voz",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "image": "./assets/splash-icon.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#F5EAA3"
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "co.edu.umb.tivo"
+    },
+    "android": {
+      "package": "co.edu.umb.tivo",
+      "adaptiveIcon": {
+        "backgroundColor": "#F5EAA3",
+        "foregroundImage": "./assets/android-icon-foreground.png"
+      }
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": ["expo-secure-store"]
+  }
+}
